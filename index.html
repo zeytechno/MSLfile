@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1976d2"/>
+<link rel="manifest" href="manifest.json">
+<title>MSL Lookup</title>
+
+<style>
+body { font-family: Arial; padding:20px; max-width:700px; margin:auto; }
+select { width:100%; padding:10px; margin-top:10px; font-size:16px; }
+#result { margin-top:25px; font-size:28px; font-weight:bold; text-align:center;
+background:#f2f2f2; padding:15px; border-radius:8px; }
+.label { margin-top:15px; font-weight:bold; }
+</style>
+</head>
+<body>
+
+<h2>MSL Tablo Sorgulama</h2>
+
+<div class="label">Body Thickness</div>
+<select id="thickness"></select>
+
+<div class="label">Moisture Sensitivity Level</div>
+<select id="level"></select>
+
+<div class="label">Sıcaklık (°C)</div>
+<select id="temp"></select>
+
+<div class="label">Bağıl Nem (RH %)</div>
+<select id="rh"></select>
+
+<div id="result">Sonuç: -</div>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+<script>
+// Placeholder minimal data (your real data remains inside original HTML if needed)
+const tableData = {};
+
+// (You can paste your full tableData object here if needed)
+</script>
+
+</body>
+</html>
